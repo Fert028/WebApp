@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --tg-theme-bg-color: #1C1C1D;
+  --tg-theme-text-color: #fff;
+  --tg-theme-button-color: #3E88F7;
+  --tg-theme-button-text-color: #fff;
+  --tg-theme-hint-color: #7E7E81;
+  --hover-opacity: opacity(0.8);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 5px;
+  display: grid;
+  place-items: center;
+}
+main {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #2B2B2B;
+}
+button {
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-size: 12px;
+}
+.ccc {
+  color: var(--tg-theme-hint-color);
+}
+.App {
+  width: 320px;
+  height: 600px;
+  padding: 10px;
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.header__img {
+  width: 96px;
+  height: 96px;
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.sectionTimer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+.sectionTimer__button {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to right, #3E88F7, #245091);
+  color: var(--tg-theme-button-text-color);
+  transition: 0.1s;
+  text-decoration: none;
+}
+.button button {
+  all: inherit;
+}
+.button:hover {
+  filter: brightness(90%);
+}
+.TgButton {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  color: var(--tg-theme-button-text-color);
+  background-color: var(--tg-theme-button-color);
+  transition: 0.25s;
+  text-decoration: none;
+}
+.TgButton button {
+  all: inherit;
+}
+.TgButton:hover {
+  filter: var(--hover-opacity);
+}
+.sectionSubscriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Subscription {
+  width: 300px;
+  height: 60px;
+  padding: 10px;
+  background: linear-gradient(to right, #000, var(--tg-theme-bg-color));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.channel {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.channel img {
+  width: 35px;
+  height: 35px;
+}
+.SubscribeButton {
+  width: 100px;
+  height: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 3px #3E88F7;
+}
+.footer {
+  width: inherit;
+}
