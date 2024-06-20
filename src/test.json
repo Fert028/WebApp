@@ -1,0 +1,23 @@
+{
+  "chats": [
+      {
+          "name": "Нейм",
+          "link": "https://t.me/+9gegTgm5Y9EyNzAy",
+          "photo_link": "https://telegra.ph/file/8364fcec36837a2642e40.png",
+          "is_subscribed": false
+      },
+      {
+          "name": "Криптоволк",
+          "link": "https://t.me/araikcryptovolk",
+          "photo_link": "https://telegra.ph/file/e86fa467073e6b82da5d7.png",
+          "is_subscribed": false
+      },
+      {
+          "name": "Ковёр",
+          "link": "https://t.me/novosti_kover",
+          "photo_link": "https://telegra.ph/file/a1de704d32c59a8b601be.png",
+          "is_subscribed": true
+      }
+  ],
+  "results_timestamp": 1719846000
+}

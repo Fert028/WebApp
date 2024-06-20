@@ -10,34 +10,37 @@ import Subscription from "./components/Subscription";
 import ExaminationButton from "./components/ExaminationButton";
 import TgButton from "./components/TgButton";
 
-
 function App() {
   let webApp = window.Telegram.WebApp;
-  const payload = {
-    raffle_id: webApp.initDataUnsafe.start_param,
-    data: webApp.initData,
-  };
 
-  if (webApp.initDataUnsafe.user && webApp.initDataUnsafe.start_param) {
-    fetch("https://randomprimebot.online/api/participate", {
-      method: "POST",
-      body: JSON.stringify(payload)
-    }).then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          console.error("Ошибка при отправке запроса на сервер");
-          return Promise.reject(new Error("Ошибка при отправке запроса на сервер"));
-        }
-      }).then((data) => {
-        alert(data.result_text);
-      }).catch((error) => {
-        console.error(error);
-      });
-  } else {
-    console.error("Отсутствуют необходимые поля в webApp.initDataUnsafe");
-    alert("Ошибка. Необходимые данные отсутствуют.");
-  }
+  // if (webApp.initDataUnsafe.user && webApp.initDataUnsafe.start_param) {
+  //   fetch('https://randomprimebot.online/api/participate', {
+  //     method: "POST",
+  //     body: JSON.stringify(webApp.initData.data)
+  //   }).then((response) => {
+  //     if (response.ok) {
+  //       return response.json();
+  //     } else {
+  //       console.error("Ошибка при отправке запроса на сервер");
+  //       return Promise.reject(new Error("Ошибка при отправке запроса на сервер"));
+  //     }
+  //   }).then((data) => {
+  //     // alert(data.result_text);
+  //   }).catch((error) => {
+  //     console.error(error);
+  //   });
+  // } else {
+  //   console.error("Отсутствуют необходимые поля в webApp.initDataUnsafe");
+  // }
+
+  const test = require('./test.json');
+
+  test.chats.forEach(function(chanals, index, arr) {
+    console.log(chanals.name);
+    console.log(index);
+    console.log(arr);
+  });
+
 
   return (
     <div className="App">
